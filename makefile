@@ -124,7 +124,7 @@ logs: ## look for 's' service logs, make s=php logs
 .PHONY: minikube
 minikube:
 		@eval $$(minikube docker-env); \
-		docker-compose -f etc/artifact/docker-compose.yml build --parallel; \
+		docker compose -f etc/artifact/docker-compose.yml build --parallel; \
 		helm dep up etc/artifact/chart; \
 		helm upgrade -i cqrs etc/artifact/chart
 
