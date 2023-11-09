@@ -10,8 +10,8 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     conditions: rabbitmq.selfHosted
   - name: traefik
-    version: 1.87.7
-    repository: https://charts.helm.sh/stable/
+    version: 25.0.0
+    repository: https://traefik.github.io/charts
     conditions: traefik.selfHosted
   - name: mysql
     version: 9.14.3
